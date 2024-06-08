@@ -15,6 +15,11 @@
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Ivirius</Authors>
+    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <Description>The official components library from Ivirius, providing you with beautiful WinUI controls.
+
+</Description>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Card.xaml" />
