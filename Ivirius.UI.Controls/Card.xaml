@@ -9,9 +9,9 @@
     mc:Ignorable="d">
     <Grid Background="{ThemeResource CardBackgroundFillColorDefault}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1">
         <StackPanel Spacing="8">
-        <TextBlock x:Name="Title" Style="{ThemeResource TitleLargeTextBlockStyle}"/>
-        <TextBlock x:Name="Subtitle" Style="{ThemeResource SubtitleTextBlockStyle}"/>
-        <TextBlock x:Name="Content"/>
+            <TextBlock x:Name="TitleTextBlock" Style="{ThemeResource TitleLargeTextBlockStyle}" Text="{Binding Title, RelativeSource={Binding DataContext}}"/>
+            <TextBlock x:Name="SubtitleTextBlock" Style="{ThemeResource SubtitleTextBlockStyle}" Text="{Binding Subtitle, RelativeSource={Binding DataContext}}"/>
+            <TextBlock x:Name="ContentTextBlock" Text="{Binding Content, RelativeSource={Binding DataContext}}"/>
     </StackPanel>
     </Grid>
 </UserControl>
