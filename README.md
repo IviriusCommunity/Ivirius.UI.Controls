@@ -8,6 +8,7 @@ The sample app, ReboundHub, is available here: https://github.com/Ivirius-Main/R
 ## Components coming in v0.0.2:
 - ChatBubble/ChatBubbleAccent
 - CommandLink/CommandLinkAccent
+- GroupBox
 ## Components coming in v0.0.3:
 - HeaderImageCard
 - HeroImageCard
