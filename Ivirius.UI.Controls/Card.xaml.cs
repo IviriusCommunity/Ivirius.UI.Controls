@@ -89,7 +89,7 @@ namespace Ivirius.UI.Controls
 
         public void DetectContentChange()
         {
-            TitleTextBlock.Text = Title;
+            ContentTextBlock.Text = Content;
         }
 
         public static readonly DependencyProperty SubtitleProperty =
