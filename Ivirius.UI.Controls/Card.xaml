@@ -8,10 +8,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Grid Background="{ThemeResource CardBackgroundFillColorDefault}" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1">
-        <StackPanel Spacing="8">
+        <StackPanel Spacing="8" Padding="16" CornerRadius="8">
             <TextBlock x:Name="TitleTextBlock" Style="{ThemeResource TitleLargeTextBlockStyle}" Text="{Binding Title, RelativeSource={Binding DataContext}}"/>
             <TextBlock x:Name="SubtitleTextBlock" Style="{ThemeResource SubtitleTextBlockStyle}" Text="{Binding Subtitle, RelativeSource={Binding DataContext}}"/>
-            <TextBlock x:Name="ContentTextBlock" Text="{Binding Content, RelativeSource={Binding DataContext}}"/>
+            <TextBlock x:Name="ContentTextBlock" Text="{Binding Content, RelativeSource={Binding DataContext}}" Style="{ThemeResource BodyTextBlockStyle}"/>
     </StackPanel>
     </Grid>
 </UserControl>
