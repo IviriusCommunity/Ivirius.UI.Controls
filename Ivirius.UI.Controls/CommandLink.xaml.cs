@@ -36,7 +36,7 @@ namespace Ivirius.UI.Controls
 
         [Browsable(true)]
         [Category("Common")]
-        [Description("The title of the Card")]
+        [Description("The title of the CommandLink")]
         public string Title
         {
             get
@@ -64,12 +64,12 @@ namespace Ivirius.UI.Controls
         "Description", // The name of the property
         typeof(string), // The type of the property
         typeof(CommandLink), // The type of the owner class
-        new PropertyMetadata("Description", ContentChanged) // Default value
+        new PropertyMetadata("Description", DescriptionChanged) // Default value
         );
 
         [Browsable(true)]
         [Category("Common")]
-        [Description("The content of the Card")]
+        [Description("The description of the CommandLink")]
         public string Description
         {
             get
@@ -82,12 +82,12 @@ namespace Ivirius.UI.Controls
             }
         }
 
-        private static void ContentChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        private static void DescriptionChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            ((CommandLink)d).DetectContentChange();
+            ((CommandLink)d).DetectDescriptionChange();
         }
 
-        public void DetectContentChange()
+        public void DetectDescriptionChange()
         {
             DescriptionTextBlock.Text = Description;
         }
