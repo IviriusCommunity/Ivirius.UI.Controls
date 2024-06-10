@@ -25,6 +25,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Card.xaml" />
+    <None Remove="CommandLink.xaml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\Documents\ivirius ui controls nuget readme.md">
@@ -40,6 +41,12 @@
   <ItemGroup>
       <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240311000" />
       <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.756" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="CommandLink.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <ItemGroup>
