@@ -11,7 +11,7 @@
     <Button Background="Transparent">
         <Grid>
             <StackPanel Orientation="Horizontal" Spacing="8">
-                <SymbolIcon Height="16" Width="16" Margin="4" Symbol="Forward" Foreground="{ThemeResource SystemAccentColor}"/>
+                <FontIcon FontSize="16" Margin="4" Glyph="&#xE72A;" Foreground="{ThemeResource SystemAccentColor}"/>
                 <StackPanel Orientation="Vertical" Spacing="4">
                     <TextBlock x:Name="TitleTextBlock" Style="{ThemeResource TitleTextBlockStyle}" Text="{Binding Title, RelativeSource={Binding DataContext}}" Foreground="{ThemeResource SystemAccentColor}"/>
                     <TextBlock x:Name="DescriptionTextBlock" Text="{Binding Description, RelativeSource={Binding DataContext}}" Style="{ThemeResource BodyTextBlockStyle}" Foreground="{ThemeResource SystemAccentColor}"/>
