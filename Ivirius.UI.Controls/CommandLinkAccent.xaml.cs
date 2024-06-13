@@ -51,7 +51,7 @@ namespace Ivirius.UI.Controls
 
         private static void TitleChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            ((CommandLink)d).DetectTitleChange();
+            ((CommandLinkAccent)d).DetectTitleChange();
         }
 
         public void DetectTitleChange()
