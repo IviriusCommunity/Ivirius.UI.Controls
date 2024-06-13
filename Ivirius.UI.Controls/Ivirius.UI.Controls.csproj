@@ -16,7 +16,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Ivirius</Authors>
-    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <PackageReleaseNotes>This update to Ivirius.UI.Controls adds many new UI controls!</PackageReleaseNotes>
     <Description>The official components library from Ivirius, providing you with beautiful WinUI controls.
 
 </Description>
