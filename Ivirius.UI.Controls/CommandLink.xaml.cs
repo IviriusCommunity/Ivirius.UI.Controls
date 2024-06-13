@@ -30,7 +30,7 @@ namespace Ivirius.UI.Controls
         DependencyProperty.Register(
         "Title", // The name of the property
         typeof(string), // The type of the property
-        typeof(Card), // The type of the owner class
+        typeof(CommandLink), // The type of the owner class
         new PropertyMetadata("Title", TitleChanged) // Default value
         );
 
