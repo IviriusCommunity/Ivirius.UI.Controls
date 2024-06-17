@@ -18,7 +18,7 @@ using Windows.Foundation.Collections;
 
 namespace Ivirius.UI.Controls
 {
-    public sealed partial class GroupBox : UserControl
+    public sealed partial class GroupBox : Grid
     {
         public GroupBox()
         {
