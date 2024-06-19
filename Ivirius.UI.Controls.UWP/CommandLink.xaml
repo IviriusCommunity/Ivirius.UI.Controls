@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserControl
+    x:Class="Ivirius.UI.Controls.CommandLink"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Ivirius.UI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Button Background="Transparent">
+        <Grid>
+            <StackPanel Orientation="Horizontal" Spacing="8">
+                <FontIcon FontSize="16" Margin="4" Glyph="&#xE72A;" Foreground="{ThemeResource SystemAccentColor}"/>
+                <StackPanel Orientation="Vertical" Spacing="4">
+                    <TextBlock x:Name="TitleTextBlock" Style="{ThemeResource TitleTextBlockStyle}" Text="{Binding Title, RelativeSource={Binding DataContext}}" Foreground="{ThemeResource SystemAccentColor}"/>
+                    <TextBlock x:Name="DescriptionTextBlock" Text="{Binding Description, RelativeSource={Binding DataContext}}" Style="{ThemeResource BodyTextBlockStyle}" Foreground="{ThemeResource SystemAccentColor}"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Button>
+</UserControl>
