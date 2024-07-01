@@ -20,7 +20,7 @@
     <Description>The official components library from Ivirius, providing you with beautiful WinUI controls.
 
 </Description>
-    <PackageReadmeFile>ivirius ui controls nuget readme.md</PackageReadmeFile>
+    <PackageReadmeFile></PackageReadmeFile>
     <PackageTags>ivirius; ui; controls; winui; wasdk</PackageTags>
   </PropertyGroup>
   <ItemGroup>
@@ -32,14 +32,7 @@
     <None Remove="GroupBox.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\..\Documents\ivirius ui controls nuget readme.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\..\..\..\Downloads\Ivirius.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+    <None Include="Ivirius.png" />
   </ItemGroup>
 
   <ItemGroup>
