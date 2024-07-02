@@ -71,4 +71,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+
+  <ItemGroup>
+    <Resource Remove="Themes\Generic.xaml" />
+  </ItemGroup>
 </Project>
