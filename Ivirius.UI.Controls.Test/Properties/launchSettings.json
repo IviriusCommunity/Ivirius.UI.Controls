@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Ivirius.UI.Controls.Test (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Ivirius.UI.Controls.Test (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
