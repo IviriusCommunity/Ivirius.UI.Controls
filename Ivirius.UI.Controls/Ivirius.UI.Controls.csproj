@@ -26,8 +26,6 @@
   <ItemGroup>
     <None Remove="Card.xaml" />
     <None Remove="ChatBubble.xaml" />
-    <None Remove="ChatBubbleAccent.xaml" />
-    <None Remove="CommandLinkAccent.xaml" />
     <None Remove="GroupBox.xaml" />
   </ItemGroup>
   <ItemGroup>
@@ -49,20 +47,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Page Update="ChatBubbleAccent.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
     <Page Update="ChatBubble.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="CommandLinkAccent.xaml">
-      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
     </Page>
   </ItemGroup>
 
