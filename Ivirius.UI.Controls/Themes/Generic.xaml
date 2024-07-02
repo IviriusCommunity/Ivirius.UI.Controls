@@ -104,9 +104,9 @@
                         BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Margin="16" Padding="16" CornerRadius="8"
                         >
                         <StackPanel Spacing="8">
-                            <TextBlock x:Name="TitleTextBlock" Style="{ThemeResource TitleLargeTextBlockStyle}" Text="{Binding Title, RelativeSource={Binding DataContext}}"/>
-                            <TextBlock x:Name="SubtitleTextBlock" Style="{ThemeResource SubtitleTextBlockStyle}" Text="{Binding Subtitle, RelativeSource={Binding DataContext}}"/>
-                            <TextBlock x:Name="ContentTextBlock" Text="{Binding Content, RelativeSource={Binding DataContext}}" Style="{ThemeResource BodyTextBlockStyle}"/>
+                            <TextBlock x:Name="TitleTextBlock" Style="{ThemeResource TitleLargeTextBlockStyle}" Text="{Binding Title}"/>
+                            <TextBlock x:Name="SubtitleTextBlock" Style="{ThemeResource SubtitleTextBlockStyle}" Text="{Binding Subtitle}"/>
+                            <TextBlock x:Name="ContentTextBlock" Text="{Binding Content}" Style="{ThemeResource BodyTextBlockStyle}"/>
                         </StackPanel>
                     </Grid>
                 </ControlTemplate>

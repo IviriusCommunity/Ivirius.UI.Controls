@@ -35,14 +35,8 @@ namespace Ivirius.UI.Controls
         [Description("The title of the Card")]
         public string Title
         {
-            get
-            {
-                return (string)GetValue(TitleProperty);
-            }
-            set
-            {
-                SetValue(TitleProperty, value);
-            }
+            get { return (string)GetValue(TitleProperty); }
+            set { SetValue(TitleProperty, value); }
         }
 
         public static readonly DependencyProperty SubtitleProperty =
@@ -55,17 +49,11 @@ namespace Ivirius.UI.Controls
 
         [Browsable(true)]
         [Category("Common")]
-        [Description("The subtitle of the Card")]
+        [Description("The Subtitle of the Card")]
         public string Subtitle
         {
-            get
-            {
-                return (string)GetValue(SubtitleProperty);
-            }
-            set
-            {
-                SetValue(SubtitleProperty, value);
-            }
+            get { return (string)GetValue(SubtitleProperty); }
+            set { SetValue(SubtitleProperty, value); }
         }
 
         public static readonly DependencyProperty ContentProperty =
@@ -78,17 +66,11 @@ namespace Ivirius.UI.Controls
 
         [Browsable(true)]
         [Category("Common")]
-        [Description("The content of the Card")]
+        [Description("The Content of the Card")]
         public string Content
         {
-            get
-            {
-                return (string)GetValue(ContentProperty);
-            }
-            set
-            {
-                SetValue(ContentProperty, value);
-            }
+            get { return (string)GetValue(ContentProperty); }
+            set { SetValue(ContentProperty, value); }
         }
     }
 }
