@@ -24,7 +24,6 @@
     <PackageTags>ivirius; ui; controls; winui; wasdk</PackageTags>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="Card.xaml" />
     <None Remove="ChatBubble.xaml" />
     <None Remove="GroupBox.xaml" />
   </ItemGroup>
@@ -50,15 +49,5 @@
     <Page Update="ChatBubble.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="Card.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Remove="Themes\Generic.xaml" />
   </ItemGroup>
 </Project>

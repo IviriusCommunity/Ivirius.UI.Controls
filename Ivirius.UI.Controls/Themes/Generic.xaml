@@ -1,4 +1,4 @@
-﻿<ResourceDictionary
+<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Ivirius.UI.Controls">
@@ -94,4 +94,23 @@
         </Setter>
     </Style>
 
+
+    <Style TargetType="local:Card" >
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:Card">
+                    <Grid
+                        Background="{ThemeResource CardBackgroundFillColorDefault}"
+                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Margin="16" Padding="16" CornerRadius="8"
+                        >
+                        <StackPanel Spacing="8">
+                            <TextBlock x:Name="TitleTextBlock" Style="{ThemeResource TitleLargeTextBlockStyle}" Text="{Binding Title, RelativeSource={Binding DataContext}}"/>
+                            <TextBlock x:Name="SubtitleTextBlock" Style="{ThemeResource SubtitleTextBlockStyle}" Text="{Binding Subtitle, RelativeSource={Binding DataContext}}"/>
+                            <TextBlock x:Name="ContentTextBlock" Text="{Binding Content, RelativeSource={Binding DataContext}}" Style="{ThemeResource BodyTextBlockStyle}"/>
+                        </StackPanel>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>
