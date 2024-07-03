@@ -20,7 +20,7 @@
     <Description>The official components library from Ivirius, providing you with beautiful WinUI controls.
 
 </Description>
-    <PackageReadmeFile></PackageReadmeFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>ivirius; ui; controls; winui; wasdk</PackageTags>
   </PropertyGroup>
   <ItemGroup>
@@ -28,6 +28,10 @@
     <None Remove="GroupBox.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="Ivirius.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
