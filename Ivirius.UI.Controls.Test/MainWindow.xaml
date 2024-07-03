@@ -9,9 +9,12 @@
     xmlns:ivirius="using:Ivirius.UI.Controls"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <ivirius:CommandLink Click="CommandLink_Click"/>
-        <ivirius:CommandLink Click="CommandLink_Click"/>
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ivirius:CommandLink Click="CommandLink_Click"/>
+            <ivirius:CommandLink Click="CommandLink_Click" Style="{StaticResource UACCommandLinkStyle}"/>
+            <ivirius:CommandLink Click="CommandLink_Click" Style="{StaticResource AccentCommandLinkStyle}"/>
+        </StackPanel>
         <ivirius:Card Title="e" Subtitle="e" Content="e"/>
     </StackPanel>
 </Window>

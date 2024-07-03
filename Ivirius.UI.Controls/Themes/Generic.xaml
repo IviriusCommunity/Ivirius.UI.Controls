@@ -48,6 +48,51 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <Style TargetType="local:CommandLink" x:Key="UACCommandLinkStyle">
+        <Setter Property="Foreground" Value="{StaticResource AccentTextFillColorPrimaryBrush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:CommandLink">
+                    <Grid
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="1"
+                        CornerRadius="4"
+                        x:Name="ContentArea"
+                        Padding="16, 10, 16, 14">
+                        <Grid.BackgroundTransition>
+                            <BrushTransition Duration="0:0:0.083" />
+                        </Grid.BackgroundTransition>
+
+                        <ImageIcon Source="Ivirius.UI.Controls/Themes/UAC.png" Margin="0, 8, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25"/>
+                        <StackPanel Margin="40, 0, 0, 0" Spacing="10">
+                            <TextBlock Foreground="{TemplateBinding Foreground}" Text="{TemplateBinding Title}" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Foreground="{TemplateBinding Foreground}" Text="{TemplateBinding Description}" TextWrapping="WrapWholeWords"/>
+                        </StackPanel>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+
+                                </VisualState>
+                                <VisualState x:Name="PointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="ContentArea.Background" Value="{StaticResource ControlFillColorSecondaryBrush}"/>
+                                        <Setter Target="ContentArea.BorderBrush" Value="{StaticResource ControlElevationBorderBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="ContentArea.Background" Value="{StaticResource ControlFillColorTertiaryBrush}"/>
+                                        <Setter Target="ContentArea.BorderBrush" Value="{StaticResource ControlElevationBorderBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
     <Style TargetType="local:CommandLink" x:Key="AccentCommandLinkStyle">
         <Setter Property="Foreground" Value="{StaticResource TextOnAccentFillColorPrimaryBrush}" />
         <Setter Property="Template">
