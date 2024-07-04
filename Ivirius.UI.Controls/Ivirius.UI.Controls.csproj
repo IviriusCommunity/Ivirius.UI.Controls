@@ -7,7 +7,7 @@
     <RuntimeIdentifiers Condition="$([MSBuild]::GetTargetFrameworkVersion('$(TargetFramework)')) &lt; 8">win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <UseWinUI>true</UseWinUI>
     <Title>Ivirius.UI.Controls</Title>
-    <Version>0.1.0-prerelease</Version>
+    <Version>0.1.1-prerelease</Version>
     <Company>Ivirius</Company>
     <Copyright>©️ 2024 Ivirius Team. Licensed under the MIT License.</Copyright>
     <PackageIcon>Ivirius.png</PackageIcon>
