@@ -17,5 +17,8 @@
         </StackPanel>
         <ivirius:Card Title="Card" Subtitle="This is a card" Content="A card is an element adding emphasis to certain areas of the user interface." Click="Card_Click"/>
         <ivirius:ChatBubble Text="Hello world!"/>
+        <ivirius:GroupBox Margin="50">
+            <Button>Hi!</Button>
+        </ivirius:GroupBox>
     </StackPanel>
 </Window>
