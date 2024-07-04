@@ -189,7 +189,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="local:ChatBubble">
                     <Grid Background="{ThemeResource CardBackgroundFillColorDefault}" VerticalAlignment="Top" CornerRadius="8" Padding="8">
-                        <TextBlock x:Name="BubbleText"/>
+                        <TextBlock x:Name="BubbleText" Text="{TemplateBinding Text}"/>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
