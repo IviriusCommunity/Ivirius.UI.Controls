@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Devices.Geolocation;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -20,6 +21,10 @@ namespace Ivirius.UI.Controls
         public Card()
         {
             this.DefaultStyleKey = typeof(Card);
+            this.PointerEntered += Card_PointerEntered;
+            this.PointerPressed += Card_PointerPressed;
+            this.PointerReleased += Card_PointerReleased;
+            this.PointerExited += Card_PointerExited;
         }
 
         public static readonly DependencyProperty TitleProperty =
@@ -72,5 +77,36 @@ namespace Ivirius.UI.Controls
             get { return (string)GetValue(ContentProperty); }
             set { SetValue(ContentProperty, value); }
         }
+
+        private bool invokedFromLeftButton;
+
+        private void Card_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            VisualStateManager.GoToState(this, "Normal", true);
+        }
+
+        private void Card_PointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            VisualStateManager.GoToState(this, "PointerOver", true);
+            if (invokedFromLeftButton == true) this.Click?.Invoke(this, new RoutedEventArgs());
+        }
+
+        private void Card_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            if (e.GetCurrentPoint(this).Properties.IsLeftButtonPressed == true)
+            {
+                VisualStateManager.GoToState(this, "Pressed", true);
+                invokedFromLeftButton = true;
+            }
+            else invokedFromLeftButton = false;
+        }
+
+        private void Card_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            if (e.GetCurrentPoint(this).Properties.IsLeftButtonPressed == false) VisualStateManager.GoToState(this, "PointerOver", true);
+            if (e.GetCurrentPoint(this).Properties.IsLeftButtonPressed == true) VisualStateManager.GoToState(this, "Pressed", true);
+        }
+
+        public event RoutedEventHandler Click;
     }
 }

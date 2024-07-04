@@ -145,14 +145,39 @@
             <Setter.Value>
                 <ControlTemplate TargetType="local:Card">
                     <Grid
-                        Background="{ThemeResource CardBackgroundFillColorDefault}"
-                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Margin="16" Padding="16" CornerRadius="8"
-                        >
-                        <StackPanel Spacing="8">
-                            <TextBlock x:Name="TitleTextBlock" Style="{ThemeResource TitleLargeTextBlockStyle}" Text="{Binding Title}"/>
-                            <TextBlock x:Name="SubtitleTextBlock" Style="{ThemeResource SubtitleTextBlockStyle}" Text="{Binding Subtitle}"/>
-                            <TextBlock x:Name="ContentTextBlock" Text="{Binding Content}" Style="{ThemeResource BodyTextBlockStyle}"/>
+    Background="{StaticResource CardBackgroundFillColorDefaultBrush}"
+    BorderBrush="{StaticResource CardStrokeColorDefaultBrush}"
+    BorderThickness="1"
+    CornerRadius="4"
+    x:Name="ContentArea"
+    Padding="16, 10, 16, 14">
+                        <Grid.BackgroundTransition>
+                            <BrushTransition Duration="0:0:0.083" />
+                        </Grid.BackgroundTransition>
+                        <StackPanel Spacing="10">
+                            <TextBlock Foreground="{TemplateBinding Foreground}" Text="{TemplateBinding Title}" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Foreground="{TemplateBinding Foreground}" Text="{TemplateBinding Subtitle}" Style="{StaticResource SubtitleTextBlockStyle}" TextWrapping="WrapWholeWords"/>
+                            <TextBlock Foreground="{TemplateBinding Foreground}" Text="{TemplateBinding Content}" TextWrapping="WrapWholeWords"/>
                         </StackPanel>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+
+                                </VisualState>
+                                <VisualState x:Name="PointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="ContentArea.Background" Value="{StaticResource ControlFillColorSecondaryBrush}"/>
+                                        <Setter Target="ContentArea.BorderBrush" Value="{StaticResource ControlElevationBorderBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="ContentArea.Background" Value="{StaticResource ControlFillColorTertiaryBrush}"/>
+                                        <Setter Target="ContentArea.BorderBrush" Value="{StaticResource ControlElevationBorderBrush}"/>
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

@@ -32,5 +32,10 @@ namespace Ivirius.UI.Controls.Test
         {
             (sender as CommandLink).Title = "CLICK WORKS";
         }
+
+        private void Card_Click(object sender, RoutedEventArgs e)
+        {
+            (sender as Card).Title = "CLICK WORKS";
+        }
     }
 }

@@ -15,6 +15,6 @@
             <ivirius:CommandLink Click="CommandLink_Click" Style="{StaticResource UACCommandLinkStyle}"/>
             <ivirius:CommandLink Click="CommandLink_Click" Style="{StaticResource AccentCommandLinkStyle}"/>
         </StackPanel>
-        <ivirius:Card Title="e" Subtitle="e" Content="e"/>
+        <ivirius:Card Title="Card" Subtitle="This is a card" Content="A card is an element adding emphasis to certain areas of the user interface." Click="Card_Click"/>
     </StackPanel>
 </Window>
