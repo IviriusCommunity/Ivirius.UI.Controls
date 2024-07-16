@@ -203,7 +203,7 @@
                     <Border BorderBrush="Black" BorderThickness="16" Height="197" CornerRadius="8" Margin="8">
                         <Image>
                             <Image.Source>
-                                <BitmapImage x:Name="img"/>
+                                <BitmapImage x:Name="img" UriSource="{TemplateBinding Source}"/>
                             </Image.Source>
                         </Image>
                     </Border>
