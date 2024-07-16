@@ -25,17 +25,17 @@ namespace Ivirius.UI.Controls
         public static readonly DependencyProperty SourceProperty =
         DependencyProperty.Register(
         "Source", // The name of the property
-        typeof(string), // The type of the property
+        typeof(object), // The type of the property
         typeof(ImageFrame), // The type of the owner class
-        new PropertyMetadata("Source") // Default value
+        new PropertyMetadata(null) // Default value
         );
 
         [Browsable(true)]
         [Category("Common")]
         [Description("The source of the content of the ImageFrame")]
-        public string Source
+        public object Source
         {
-            get { return (string)GetValue(SourceProperty); }
+            get { return (object)GetValue(SourceProperty); }
             set { SetValue(SourceProperty, value); }
         }
     }

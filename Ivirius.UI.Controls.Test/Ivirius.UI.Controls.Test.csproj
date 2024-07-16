@@ -12,6 +12,9 @@
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Assets\ThemeBanner.png" />
+  </ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -39,6 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ivirius.UI.Controls\Ivirius.UI.Controls.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="Assets\ThemeBanner.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <!--
