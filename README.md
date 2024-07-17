@@ -8,7 +8,7 @@ To use the package in your app, simply download it from NuGet (most preferably f
 
 ### Prerequisites
 
-This package requires at least Windows App SDK 1.5.240311000 and at least Microsoft.Windows.SDK.BuildTools 10.0.22621.756. Also make sure that you app is a WinUI3/Windows App SDK project, and that its TFM (target framework) is net8.0-windows10.0.19041.0 or higher (net8.0-windows10.0.22621.0 counts as a higher version, for example, and net7.0-windows10.0.22621.0 counts as a lower version). There is no port to UWP (Universal Windows Platform) yet, but there should be one in the forseeable future.
+This package requires at least Windows App SDK 1.5.240627000 and at least Microsoft.Windows.SDK.BuildTools 10.0.26100.1. Also make sure that you app is a WinUI3/Windows App SDK project, and that its TFM (target framework) is net8.0-windows10.0.19041.0 or higher (net8.0-windows10.0.22621.0 counts as a higher version, for example, and net7.0-windows10.0.22621.0 counts as a lower version). There is no port to UWP (Universal Windows Platform) yet, but there should be one in the forseeable future.
 
 ## Usage
 
