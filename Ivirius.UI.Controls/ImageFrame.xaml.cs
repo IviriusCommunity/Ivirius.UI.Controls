@@ -39,7 +39,13 @@ namespace Ivirius.UI.Controls
         [Description("The source of the content of the ImageFrame")]
         public string Source
         {
-            get { return (string)GetValue(SourceProperty); }
+            get {
+                if (GetValue(SourceProperty).ToString().Contains("ms-appx://")) {
+                    return (string)GetValue(SourceProperty);
+                } else {
+                    return BaseUri + (string)GetValue(SourceProperty);
+                }
+            }
             set { SetValue(SourceProperty, value); }
         }
     }
