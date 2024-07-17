@@ -20,6 +20,6 @@
         <ivirius:GroupBox Margin="50">
             <Button>Hi!</Button>
         </ivirius:GroupBox>
-        <ivirius:ImageFrame Source="/Assets/ThemeBanner.png"/>
+        <ivirius:ImageFrame Source="ms-appx:///Assets/StoreLogo.png"/>
     </StackPanel>
 </Window>
