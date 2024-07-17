@@ -195,4 +195,16 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+    <Style TargetType="local:ChatBubble" x:Key="AccentChatBubbleStyle">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:ChatBubble">
+                    <Grid Background="{ThemeResource AccentFillColorDefaultBrush}" VerticalAlignment="Top" CornerRadius="8" Padding="8">
+                        <TextBlock x:Name="BubbleText" Text="{TemplateBinding Text}" Foreground="{ThemeResource TextOnAccentFillColorPrimaryBrush}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>
