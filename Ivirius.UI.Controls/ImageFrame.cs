@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Ivirius.UI;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -25,7 +26,7 @@ namespace Ivirius.UI.Controls
         public static readonly DependencyProperty SourceProperty =
         DependencyProperty.Register(
         "Source", // The name of the property
-        typeof(object), // The type of the property
+        typeof(string), // The type of the property
         typeof(ImageFrame), // The type of the owner class
         new PropertyMetadata(null) // Default value
         );
@@ -35,8 +36,16 @@ namespace Ivirius.UI.Controls
         [Description("The source of the content of the ImageFrame")]
         public object Source
         {
-            get { return (object)GetValue(SourceProperty); }
-            set { SetValue(SourceProperty, value); }
+            get {
+                ImageLoader imageLoader = new ImageLoader();
+                imageLoader.LoadImage((string)GetValue(SourceProperty));
+                return (object)GetValue(SourceProperty); 
+            }
+            set {
+                ImageLoader imageLoader = new ImageLoader();
+                imageLoader.LoadImage((string)GetValue(SourceProperty));
+                SetValue(SourceProperty, value); 
+            }
         }
     }
 }

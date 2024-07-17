@@ -201,7 +201,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="local:ImageFrame">
                     <Border BorderBrush="Black" BorderThickness="16" Height="197" CornerRadius="8" Margin="8">
-                        <ContentPresenter Content="{TemplateBinding Source}" />
+                        <Image Source="{TemplateBinding Source}"/>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
