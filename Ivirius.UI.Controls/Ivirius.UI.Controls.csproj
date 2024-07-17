@@ -16,7 +16,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Ivirius</Authors>
-    <PackageReleaseNotes>This update to Ivirius.UI.Controls migrates all controls from UserControl to Control, except GroupBox which experienced issues. It also fixes bugs with Card, adding a Click event to it as well.</PackageReleaseNotes>
+    <PackageReleaseNotes>This update to Ivirius.UI.Controls adds a new control, ImageFrame, readds an accented style for the ChatBubble control and updates package dependencies</PackageReleaseNotes>
     <Description>The official components library from Ivirius, providing you with beautiful WinUI controls.
 
 </Description>
