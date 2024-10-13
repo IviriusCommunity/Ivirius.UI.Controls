@@ -1,5 +1,8 @@
 # Ivirius.UI.Controls
 
+> [!Warning]
+> **Deprecated. This library has now been merged into Crimson.Toolkit, which you can find here: https://github.com/IviriusCommunity/Crimson**
+
 The official components library from Ivirius, providing you with beautiful WinUI controls.
 
 ## Getting started
