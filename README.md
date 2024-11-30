@@ -1,7 +1,8 @@
-# Ivirius.UI.Controls
+> [!CAUTION]
+> **`Ivirius.UI.Controls` is now deprecated. This library has now been merged into the Riverside Toolkit, which you can find [here](https://github.com/RiversideValley/Toolkit).**
 
-> [!Warning]
-> **Deprecated. This library has now been merged into Crimson.Toolkit, which you can find here: https://github.com/IviriusCommunity/Crimson**
+
+# Ivirius.UI.Controls
 
 The official components library from Ivirius, providing you with beautiful WinUI controls.
 
